@@ -57,7 +57,7 @@ public class ListOfMapExample {
 
         Connection connection = DriverManager.getConnection(dbUrl,dbUsername,dbPassword);
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("select first_name, last_name,salary,job_id from employees");
+        ResultSet resultSet = statement.executeQuery("select first_name, last_name,salary,job_id from employees where rownum < 6");
 
         //in order to get column names we need ResultSetMetaData
         ResultSetMetaData rsmd = resultSet.getMetaData();
