@@ -98,7 +98,7 @@ public class Jdbc_examples {
 
         }
 
-        //1:59 da kaldık
+
 
         resultSet.close();
         statement.close();
